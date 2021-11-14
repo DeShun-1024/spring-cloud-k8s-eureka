@@ -1,9 +1,10 @@
 package com.cloud.k8s.springcloudk8s.sample;
 
 import org.springframework.boot.SpringApplication;
-import org.springframework.boot.autoconfigure.SpringBootApplication;
+import org.springframework.cloud.client.SpringCloudApplication;
 
-@SpringBootApplication
+
+@SpringCloudApplication
 public class SpringCloudK8sSampleApplication {
 
     public static void main(String[] args) {
