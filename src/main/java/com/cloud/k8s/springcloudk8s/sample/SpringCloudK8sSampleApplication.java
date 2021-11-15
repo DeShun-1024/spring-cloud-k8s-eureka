@@ -1,10 +1,13 @@
 package com.cloud.k8s.springcloudk8s.sample;
 
 import org.springframework.boot.SpringApplication;
+import org.springframework.boot.autoconfigure.SpringBootApplication;
 import org.springframework.cloud.client.SpringCloudApplication;
+import org.springframework.cloud.netflix.eureka.server.EnableEurekaServer;
 
 
-@SpringCloudApplication
+@EnableEurekaServer
+@SpringBootApplication
 public class SpringCloudK8sSampleApplication {
 
     public static void main(String[] args) {

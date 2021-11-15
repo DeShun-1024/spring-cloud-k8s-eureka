@@ -1,1 +1,16 @@
+server:
+  port: 30001
 
+eureka:
+  instance:
+    hostname: localhost
+  client:
+#   是否将该应用注册到Eureka service
+    register-with-eureka: false
+    fetch-registry: false
+    service-url:
+      defaultZone: http://${eureka.instance.hostname}:${server.port}/eureka/
+
+  server:
+    wait-time-in-ms-when-sync-empty: 0
+    enable-self-preservation: false
