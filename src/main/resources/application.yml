@@ -8,6 +8,7 @@ eureka:
 #   是否将该应用注册到Eureka service
     register-with-eureka: false
     fetch-registry: false
+#   连接的Eureka server端地址
     service-url:
       defaultZone: http://${eureka.instance.hostname}:${server.port}/eureka/
 
